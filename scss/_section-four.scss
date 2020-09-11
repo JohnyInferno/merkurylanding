@@ -1,0 +1,48 @@
+.drag-n-drop {
+    background: $navy-blue url("../img/graph-bg.png") no-repeat center center;
+    padding-top: 163px;
+    padding-bottom: 120px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    &__text-block {
+        max-width: 505px;
+    }
+
+    &__title {
+        
+        margin-bottom: 47px;
+
+        h2 {
+            font-size: 60px;
+            font-weight: 400;
+            @include thin;
+            color: white;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 53px;
+        font-size: 18px;
+        color: $gray;
+        line-height: 30px;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__arrows {
+        //
+    }
+
+    &__left-arrow {
+        margin-right: 19px;
+    }
+}

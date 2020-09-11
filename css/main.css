@@ -136,6 +136,11 @@ header .navbar nav .navbar__login:hover {
   padding-bottom: 130px;
 }
 
+.advantages__home-img {
+  -webkit-box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+}
+
 .advantages__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,5 +253,90 @@ header .navbar nav .navbar__login:hover {
   position: relative;
   left: -10px;
   margin-left: 8px;
+}
+
+.drag-n-drop {
+  background: #0e1a35 url("../img/graph-bg.png") no-repeat center center;
+  padding-top: 163px;
+  padding-bottom: 120px;
+}
+
+.drag-n-drop__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drag-n-drop__text-block {
+  max-width: 505px;
+}
+
+.drag-n-drop__title {
+  margin-bottom: 47px;
+}
+
+.drag-n-drop__title h2 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: 'Roboto Thin', sans-serif;
+  color: white;
+}
+
+.drag-n-drop__subtitle {
+  margin-bottom: 53px;
+  font-size: 18px;
+  color: #8492af;
+  line-height: 30px;
+}
+
+.drag-n-drop__subtitle p {
+  margin-bottom: 30px;
+}
+
+.drag-n-drop__left-arrow {
+  margin-right: 19px;
+}
+
+.template {
+  padding: 100px 0px 130px 0px;
+}
+
+.template__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.template__title h2 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: 'Roboto Thin', sans-serif;
+  margin-bottom: 48px;
+}
+
+.template__subtitle {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 86px;
+  max-width: 995px;
+  font-weight: 400;
+  color: #8492af;
 }
 /*# sourceMappingURL=main.css.map */
