@@ -1,0 +1,35 @@
+header {
+    box-sizing: border-box;
+    padding-top: 67px;
+    padding-bottom: 168px;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        nav{
+            .navbar__link {
+                margin-left: 50px;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                
+                &:hover {
+                    color: $light-blue;
+                }
+            }
+
+            .navbar__login {
+                display: inline-block;
+                padding: 15px 43px;
+                border: 1px solid rgba($light-blue, 0.3);
+                border-radius: 24px;
+                color: $light-blue;
+                &:hover {
+                    background-color: $light-blue;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

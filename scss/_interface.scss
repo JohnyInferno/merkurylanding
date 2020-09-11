@@ -1,3 +1,17 @@
 body {
     @include regular;
 }
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.container {
+    max-width: 1472px;
+    margin: auto;
+}
+
+.container-header {
+    max-width: 1680px;
+}
