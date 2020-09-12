@@ -1,0 +1,41 @@
+.footer {
+    background-color: $navy-blue;
+    padding: 69px 0px 65px 0px;
+    font-size: 18px;
+    color: $gray;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__links {
+        ul {
+            list-style-type: none;
+            display: inline-block;
+
+            li {
+                display: inline-block;
+                margin-right: 50px;
+
+                a {
+                    text-decoration: none;
+                    color: $gray;
+
+                    &:hover {
+                        color: $light-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: inline-block;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+}
