@@ -1,6 +1,10 @@
 .template {
     padding: 100px 0px 130px 0px;
 
+    @media (max-width: 767px) {
+        padding: 50px 0px 60px 0px;
+    }
+
     &__row {
         display: flex;
         flex-direction: column;
@@ -9,11 +13,18 @@
     }
 
     &__title {
+        text-align: center;
+
         h2 {
             font-size: 60px;
             font-weight: 400;
             @include thin;
             margin-bottom: 48px;
+
+            @media (max-width: 767px) {
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
         }
         
     }
@@ -26,5 +37,20 @@
         max-width: 995px;
         font-weight: 400;
         color: $gray;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 50px;
+            max-width: 500px;
+        }
+
+    }
+
+    &__img-block {
+
+        img {
+            max-width: 100%;
+        }
     }
 }

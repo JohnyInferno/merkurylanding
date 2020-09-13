@@ -10,6 +10,30 @@ body {
 .container {
     max-width: 1472px;
     margin: auto;
+
+    @media (max-width: 1685px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 1376px) {
+        max-width: 1376px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 991px;
+
+    }
+
+    @media (max-width: 767px) {
+        max-width: 767px;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 479px) {
+        max-width: 479px;
+
+    }
+
 }
 
 .container-header {

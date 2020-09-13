@@ -16,19 +16,40 @@
             font-size: 60px;
             font-weight: 400;
             @include thin;
+
+            @media (max-width: 767px) {
+                font-size: 50px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 50px;
         }
     }
 
     .cards {
         margin-bottom: 109px;
 
+        @media (max-width: 767px) {
+            margin-bottom: 50px;
+        }
+
         &__row {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media (max-width: 1300px) {
+                flex-wrap: wrap;
+            }
         }
 
         &__item {
+            
             margin: 0 70px;
             padding: 48px 59px 30px 52px;
             display: flex;
@@ -36,15 +57,47 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 4px 30px rgba(black, 0.25);
+
+            @media (max-width: 1550px) {
+                margin: 0 30px;
+                justify-content: space-between;
+            }
+
+            @media (max-width: 1300px) {
+                flex-basis: 20%;
+                margin-bottom: 60px;
+                
+            }
+
+            @media (max-width: 1254px) {
+                flex-basis: 250px;
+                
+            }
+
+            @media (max-width: 480px) {
+                margin: 0 10px 30px 10px;
+                padding: 36px 45px 23px 40px;
+            }
+        
+            
+
         }
 
         &__title {
             margin-bottom: 55px;
 
+            @media (max-width: 480px) {
+                margin-bottom: 25px;
+            }
+
             h4 {
                 font-size: 24px;
                 font-weight: 400;
                 text-transform: uppercase;
+
+                @media (max-width: 480px) {
+                    font-size: 20px;
+                }
             }
             
         }
@@ -54,16 +107,29 @@
             font-size: 24px;
             color: $gray;
 
+            @media (max-width: 480px) {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
             .dollar {
                 color: $navy-blue;
                 font-size: 40px;
                 font-weight: bold;
+
+                @media (max-width: 480px) {
+                    font-size: 30px;
+                }
             }
 
             .price-num {
                 color: $navy-blue;
                 font-size: 72px;
                 font-weight: bold;
+
+                @media (max-width: 480px) {
+                    font-size: 54px;
+                }
             }
         }
 
@@ -76,6 +142,11 @@
                     font-size: 18px;
                     color: $gray;
                     margin-bottom: 15px;
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
 
                     &:before {
                         content: url("../img/mark.png");
@@ -104,6 +175,12 @@
         line-height: 30px;
         color: $gray;
         margin-bottom: 100px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            max-width: 500px;
+            margin-bottom: 50px;
+        }
     }
 
 
@@ -120,6 +197,7 @@
             background: $navy-blue;
             
         }
+        
         
     }
     

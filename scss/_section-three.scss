@@ -1,11 +1,20 @@
 .all-you-need {
-    background: url("../img/laptop-bg.png") no-repeat 148% 0%;
+    background: url("../img/laptop-bg.png") no-repeat 800px 0px;
     padding-bottom: 273px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 50px;
+    }
+    
 
     &__content-container {
         max-width: 655px;
         padding-top: 80px;
         
+        @media (max-width: 767px) {
+            margin-left: 20px;
+            padding-top: 0px;
+        }
     }
 
     &__title {
@@ -16,6 +25,15 @@
             font-weight: 400;
             font-size: 60px;
             @include thin;
+
+            @media (max-width: 767px) {
+                font-size: 40px;
+                
+            }
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
         }
     }
 
@@ -25,6 +43,15 @@
         color: $gray;
         padding-right: 74px;
         p {
+            margin-bottom: 30px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
             margin-bottom: 30px;
         }
     }
@@ -45,6 +72,11 @@
                     position: relative;
                     left: -10px;
                     margin-left: 8px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                    margin-bottom: 17px;
                 }
             }
         }
