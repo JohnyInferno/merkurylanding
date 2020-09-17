@@ -13,6 +13,7 @@
         justify-content: space-between;
         align-items: center;
         
+        
         @media (max-width: 1500px) {
             flex-wrap: wrap;
             justify-content: center;
@@ -21,7 +22,8 @@
     }
 
     &__img-container {
-        
+        opacity: 0;
+
         @media (max-width: 1500px) {
             flex-basis: 100%;
             display: block;
@@ -37,6 +39,7 @@
 
     &__text-block {
         max-width: 505px;
+        opacity: 0;
 
         @media (max-width: 1500px) {
             margin-bottom: 80px;
@@ -97,3 +100,43 @@
         margin-right: 19px;
     }
 }
+
+.appear-right {
+    animation: appear-right 2s forwards;
+}
+
+.appear-left {
+    animation: appear-left 2s forwards;
+}
+
+// @keyframes appear-right {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(100%);
+//     }
+
+//     50% {
+//         transform: translateX(-5%);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0%);
+//     }
+// }
+
+// @keyframes appear-left {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-100%);
+//     }
+
+//     50% {
+//         transform: translateX(5%);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0%);
+//     }
+// }

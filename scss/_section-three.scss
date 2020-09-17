@@ -1,15 +1,17 @@
 .all-you-need {
-    background: url("../img/laptop-bg.png") no-repeat 800px 0px;
+    
     padding-bottom: 273px;
 
     @media (max-width: 767px) {
         padding-bottom: 50px;
     }
     
+    
 
     &__content-container {
         max-width: 655px;
         padding-top: 80px;
+        opacity: 0;
         
         @media (max-width: 767px) {
             margin-left: 20px;
@@ -18,7 +20,7 @@
     }
 
     &__title {
-    
+        width: 100%;
         margin-bottom: 59px;
 
         h2 {
@@ -84,4 +86,47 @@
     }    
 
     
+}
+
+.bg-anim {
+    animation: bg-img 1s forwards;
+
+    &_rev {
+        animation: appeare 1s forwards reverse;
+    }
+}
+
+.appeared {
+    animation: appeare 2s forwards;
+
+    &_rev {
+        animation: appeare 2s forwards reverse;
+    }
+}
+
+
+@keyframes bg-img {
+    0% {
+        background: url("../img/laptop-bg.png") no-repeat 2000px 0px;
+    }
+
+    100% {
+        background: url("../img/laptop-bg.png") no-repeat 900px 0px;
+    }
+}
+
+@keyframes appeare {
+    0% {
+        opacity: 0;
+        transform: translateX(60%);
+    }
+
+    50% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }

@@ -10,10 +10,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     &__title {
         text-align: center;
+        opacity: 0;
 
         h2 {
             font-size: 60px;
@@ -37,6 +39,7 @@
         max-width: 995px;
         font-weight: 400;
         color: $gray;
+        opacity: 0;
 
         @media (max-width: 767px) {
             font-size: 14px;
@@ -48,9 +51,22 @@
     }
 
     &__img-block {
+        opacity: 0;
 
         img {
             max-width: 100%;
         }
     }
+}
+
+.def-appear {
+    animation: two-items-appear 1s 0s forwards;
+}
+
+.def-appear-delay {
+    animation: two-items-appear 1s 0.5s forwards;
+}
+
+.def-appear-delaym {
+    animation: two-items-appear 1s 1s forwards;
 }

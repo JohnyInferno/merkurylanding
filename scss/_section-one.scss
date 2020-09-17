@@ -22,6 +22,8 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 15px;
+    animation: appear-right 1.5s forwards;
+
     
     h1 {
         font-weight: 400;
@@ -45,6 +47,7 @@
     color: #8492af;
     font-size: 36px;
     margin-bottom: 90px;
+    animation: appear-left 1.5s forwards;
 
     @media (max-width: 767px) {
         font-size: 24px;
@@ -55,6 +58,8 @@
 .mainscreen__button {
     text-align: center;
     margin: auto;
+    animation: appear-bottom 1.5s forwards;
+
     .mainscreen__button-link {
         font-size: 18px;
         padding: 16px 55px;
@@ -68,4 +73,50 @@
         }
     }
     
+}
+
+
+
+@keyframes appear-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(-5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes appear-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes appear-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1000%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
