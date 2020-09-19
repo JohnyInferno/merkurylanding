@@ -41,9 +41,27 @@ $(window).scroll(function(){
     }
 
     if ( $(this).scrollTop() > six_item.offset().top - 700) {
-        six_item.addClass('shaked')
-
+        six_item.addClass('shaked');
+        
     }
 });
 
+$('.contact-open').click(function(){
+    $(".popup-contact-bg").fadeTo(200, 1);
+    $('.popup-contact').fadeIn();
+    
+  })
 
+
+  $('.popup-contact__close').click(function(){
+    $('.popup-contact').fadeOut();
+  })
+
+$(".drag-n-drop__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    variableWidth: true,
+    centerMode: true,
+    dots: true,
+})

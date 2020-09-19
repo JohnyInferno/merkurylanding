@@ -22,7 +22,7 @@
                         <a href="#" class="navbar__link">Features</a>
                         <a href="#" class="navbar__link">Pricing </a>
                         <a href="#" class="navbar__link">Blog</a>
-                        <a href="#" class="navbar__link">Contact</a>
+                        <a href="#" class="navbar__link contact-open">Contact</a>
                         <a href="#" class="navbar__link navbar__login">Login</a>
                     </nav>
                 </div>
@@ -123,7 +123,18 @@
         <div class="container">
             <div class="drag-n-drop__row">
                 <div class="drag-n-drop__img-container">
-                    <img class="drag-n-drop__img" src="img/dnd.png" alt="Drag and drop">
+                    <div class="drag-n-drop__slider slider">
+                        <div class="slider__item">
+                            <img class="drag-n-drop__img" src="img/dnd.png" alt="Drag and drop">
+                        </div>
+                        <div class="slider__item">
+                            <img class="drag-n-drop__img" src="img/dnd.png" alt="Drag and drop">
+                        </div>
+                        <div class="slider__item">
+                            <img class="drag-n-drop__img" src="img/dnd.png" alt="Drag and drop">
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="drag-n-drop__text-block">
                     <div class="drag-n-drop__title">
@@ -133,10 +144,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </div>
-                    <div class="drag-n-drop__arrows">
-                        <img class="drag-n-drop__left-arrow" src="img/Arrow_left.png" alt="">
-                        <img class="drag-n-drop__right-arrow" src="img/Arrow_right.png" alt="">
-                    </div>
+                    
                 </div>
 
             </div>
@@ -246,7 +254,41 @@
             </div>
         </div>
     </footer>
+    <div class="popup-contact-bg">
+        <div class="popup-contact">
+            <div class="popup-contact__body">
+                <div class="popup-contact__content">
+                    <a href="#" class="popup-contact__close">X</a>
+                    <div class="popup-contact__title">
+                        <h3>Leave your details</h3>
+                    </div>
+                    <div class="popup-contact__form">
+                        
+                        <form action="#">
+                            <ul>
+                                <li>
+                                    <label for="name">Your name:</label>
+                                    <input type="text" id="name" name="user_name">
+                                </li>
+                                <li>
+                                    <label for="mail">Your e-mail:</label>
+                                    <input type="text" id="mail" name="user_mail">
+                                </li>
+                                <li class="form-button">
+                                    <button type="submit">Continue</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="overlay"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
